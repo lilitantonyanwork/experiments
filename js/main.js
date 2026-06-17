@@ -78,8 +78,8 @@ var swiper4 = new Swiper(".certificate__list", {
     spaceBetween: 15,
     slidesPerView: 3,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".certificate__list .swiper-button-next",
+        prevEl: ".certificate__list .swiper-button-prev",
     },
     breakpoints: {
         // when window width is >= 320px
@@ -106,7 +106,21 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.btn__more').addEventListener('click', function (){
         document.querySelector('.product__more--desc').classList.toggle('open');
     })
-    document.querySelector('.btn__menu').addEventListener('click', function (){
-        document.querySelector('.menu').classList.toggle('open');
-    })
+    const menu = document.querySelector('.menu');
+    const btn = document.querySelector('.btn__menu');
+
+    btn.addEventListener('click', function (e) {
+        e.stopPropagation(); // чтобы клик не ушёл дальше
+        menu.classList.toggle('open');
+        btn.classList.toggle('open');
+    });
+
+// клик по странице — закрываем
+    document.addEventListener('click', function (e) {
+        if (!menu.contains(e.target) && !btn.contains(e.target)) {
+            menu.classList.remove('open');
+            btn.classList.remove('open');
+        }
+    });
+
 });

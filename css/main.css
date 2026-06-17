@@ -653,10 +653,18 @@ header{
 }
 .product__item{
     width: calc(100%/3 - 11px);
+    transition: all .3s;
+    background: #050505;
 }
+.product__item:hover{
+    transform: translateY(-40px);
+
+}
+
 .product__item img{
     border-radius: 24px;
     margin-bottom: 6px;
+    width: 100%;
 }
 .product__item h3{
     font-weight: 700;
@@ -817,6 +825,10 @@ footer{
 .btn__menu{
     display: none;
 }
+.certificate__list .swiper-button-prev,
+.certificate__list .swiper-button-next{
+    display: none;
+}
 @media (max-width: 1024px){
     .container{
         max-width: 100%;
@@ -871,11 +883,28 @@ footer{
         height: 42px;
         background: url('../images/menu.svg') no-repeat;
     }
+    .btn__menu.open{
+        background: url('../images/menu-close.svg') no-repeat;
+    }
     .btn__cart{
         display: none;
     }
     .menu{
-        display: none;
+        top: -300px;
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+        transition: all .8s;
+        left: 0;
+        z-index: 999;
+        background: #200924;
+        gap: 30px;
+        border-bottom: 1px solid #FFFFFF14;
     }
     .footer__content{
         flex-wrap: wrap;
@@ -884,19 +913,12 @@ footer{
         margin-top: 20px;
     }
     .menu.open{
-        position: absolute;
+        top: 70px;
+        visibility: visible;
+    }
+    .certificate__list .swiper-button-prev,
+    .certificate__list .swiper-button-next{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-        width: 100%;
-        top: 60px;
-        left: 0;
-        z-index: 999;
-        background: #200924;
-        gap: 30px;
-        border-bottom: 1px solid #FFFFFF14;
     }
 }
 @media (max-width: 600px){
