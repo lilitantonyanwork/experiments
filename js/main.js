@@ -123,4 +123,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    Fancybox.bind("[data-fancybox='product']", {
+        Thumbs: {
+            autoStart: true,
+        }
+    });
+    Fancybox.bind("[data-fancybox='certificate']", {
+        Thumbs: {
+            autoStart: true,
+        }
+    });
+    Fancybox.bind("[data-fancybox='certificate-f']", {
+        Thumbs: {
+            autoStart: true,
+        }
+    });
+
 });

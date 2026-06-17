@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css"/>
+
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -72,22 +73,32 @@
             </div>
             <div class="product__bottom df">
                 <div class="product__gallery">
-                    <div style="" class="product-gallery swiper">
+                    <div style="" class="product-gallery swiper" id="lightgallery">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="images/product1.png" alt="product1">
+                                <a href="images/product1.png" data-fancybox="product">
+                                    <img src="images/product1.png" alt="product1">
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product1.png" alt="product1">
+                                <a href="images/product2.png" data-fancybox="product">
+                                    <img src="images/product2.png" alt="product1">
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product1.png" alt="product1">
+                                <a href="images/product3.png" data-fancybox="product">
+                                    <img src="images/product3.png" alt="product1">
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product1.png" alt="product1">
+                                <a href="images/product4.png" data-fancybox="product">
+                                    <img src="images/product4.png" alt="product1">
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product1.png" alt="product1">
+                                <a href="images/product5.png" data-fancybox="product">
+                                    <img src="images/product5.png" alt="product1">
+                                </a>
                             </div>
 
                         </div>
@@ -346,19 +357,25 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="certificate__item">
-                            <img src="images/certificate.png" alt="certificate">
+                            <a href="images/certificate.png" data-fancybox="certificate">
+                                <img src="images/certificate.png" alt="certificate">
+                            </a>
                             <h3>Сертификат 1</h3>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="certificate__item">
-                            <img src="images/certificate.png" alt="certificate">
+                            <a href="images/certificate.png" data-fancybox="certificate">
+                                <img src="images/certificate.png" alt="certificate">
+                            </a>
                             <h3>Сертификат 2</h3>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="certificate__item">
-                            <img src="images/certificate.png" alt="certificate">
+                            <a href="images/certificate.png" data-fancybox="certificate">
+                                <img src="images/certificate.png" alt="certificate">
+                            </a>
                             <h3>Сертификат 3</h3>
                         </div>
                     </div>
@@ -422,9 +439,9 @@
                 г. Москва, ул. Ленина, д. 1, оф. 9В</p>
             </div>
             <div class="footer__col">
-                <a href="" class="footer__link">Сертификат соответсвия №1</a>
-                <a href="" class="footer__link">Сертификат соответсвия №2</a>
-                <a href="" class="footer__link">Сертификат соответсвия №3</a>
+                <a href="images/certificate.png" data-fancybox="certificate-f" class="footer__link">Сертификат соответсвия №1</a>
+                <a href="images/certificate.png" data-fancybox="certificate-f" class="footer__link">Сертификат соответсвия №2</a>
+                <a href="images/certificate.png" data-fancybox="certificate-f" class="footer__link">Сертификат соответсвия №3</a>
                 <a href="" class="footer__link">Политика обработки персональных данных</a>
             </div>
             <div class="footer__col">
@@ -438,10 +455,9 @@
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
-<script src="js/lightgallery.umd.js"></script>
-<script src="js/lg-thumbnail.umd.js"></script>
-<script src="js/lg-zoom.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
