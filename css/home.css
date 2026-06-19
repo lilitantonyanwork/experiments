@@ -1,0 +1,846 @@
+html{
+    font-size: 16px;
+}
+.banner{
+    height: 600px;
+    position: relative;
+}
+.banner video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner__content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner__content img{
+    width: 670px;
+}
+.btn__about{
+    margin-top: 40px;
+    background-color: #D697BB78;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    border-radius: 25px;
+    padding: 5px 44px;
+}
+.banner__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
+.banner__info p{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1.45em;
+    font-weight: 400;
+    font-style: oblique;
+    color: #fff;
+
+}
+.banner__info p:last-child{
+    margin-top: 100px;
+}
+.line{
+    height: 54px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.line__info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+    animation: ticker 30s infinite linear forwards;
+}
+.line__info--scnd{
+    animation: 30s ticker 15s infinite linear forwards;
+}
+@keyframes ticker {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.line__info span{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 3em;
+    color: #fff;
+    white-space: nowrap;
+
+}
+.features__right{
+    padding-top: 172px;
+    gap: 24px;
+}
+.features__right img{
+    width: 478px;
+    object-fit: cover;
+    height: 695px;
+}
+.features__right p{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 40px;
+}
+.features__img img{
+    width: 92px;
+}
+
+.features__left{
+    padding-top: 30px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+}
+
+.features__left span{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 4em;
+    font-weight: 400;
+    word-spacing: 1em;
+    color: #fff;
+    position: absolute;
+}
+.features__left span:first-child{
+    top: 30%;
+    left: 0;
+}
+.features__left span:last-child{
+    top: 30%;
+    right: 0;
+}
+.features__logo{
+    width: 165px;
+    height: 165px;
+    position: absolute;
+    bottom: 20%;
+    left: -20%;
+}
+.btn__purple{
+    background-color: #7800c8;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    border-radius: 35px;
+    padding: 22px 86px 20px;
+    color: #fff;
+}
+.features__animation{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__bottom{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.features__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.features__item span{
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #fff;
+}
+.features__item .number{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 8.3vw;
+    font-weight: 400;
+    line-height: 1em;
+    text-shadow: 5px 2px 6px #fbe5fb;
+    color: #fff;
+}
+.features__list{
+    gap: 45px;
+    margin-top: -90px;
+}
+.features__item:nth-child(2n){
+    transform: translateY(100px);
+}
+.about{
+    padding-top: 120px;
+}
+.about__right img{
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+.about__right{
+    margin-right: 30px;
+    position: relative;
+    height: 390px;
+}
+.about__img--title{
+    position: absolute;
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 2.5vw;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #fff;
+    right: 0;
+}
+.about__img--text{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1.4vw;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-shadow: -3px 0px 4px #e3d8e2;
+    color: #e3beed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.about__text{
+        max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2em;
+    color: #fff;
+}
+.about__left{
+    width: calc(100% - 630px);
+}
+.break{
+    height: 37px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background: url('../images/home/image-918bb0b1-5a24-4d7a-94bb-a56079886811.webp') no-repeat center center;
+    background-size: contain;
+}
+.about__video{
+    width: 380px;
+    height: 479px;
+}
+.about{
+    padding-left: 58px;
+}
+.about__col{
+    position: relative;
+}
+.about__garanty{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 80px;
+    left: -60px;
+}
+.about__col img{
+    width: 184px;
+    height: 251px;
+    object-fit: cover;
+}
+.about__content{
+    margin-bottom: 30px;
+}
+.features__animation span{
+    display: inline-block;
+    transform: translateY(80px);
+}
+.img-on, .img-off{
+    transition: all .3s;
+    position: absolute;
+    width: 103px;
+    height: 230px;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-on.hide{
+   visibility: hidden;
+}
+.img-off.hide{
+    visibility: hidden;
+}
+.type__content{
+    padding-left: 40px;
+}
+.type__left{
+    width: 402px;
+}
+.type__right{
+    width: calc(100% - 402px);
+    position: relative;
+    padding-top: 80px;
+}
+
+.type__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.type__item img{
+    width: 145px;
+    max-height: 422px;
+    object-fit: contain;
+}
+.about__content .about__col:nth-child(2){
+    padding-bottom: 200px;
+}
+.type__item--text{
+    position: absolute;
+    top: -200px;
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2em;
+    color: #fff;
+    width: 100%;
+    left: 42%;
+    transform: translateX(-50%);
+    display: none;
+    max-width: 600px;
+
+}
+.type__item--title{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+.type__item img:hover + .type__item--text{
+   display: block;
+}
+.type__text--animation{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #e3beed;
+    margin-top: 20px;
+}
+.type__text {
+    overflow: hidden;
+}
+
+.type__text--animation {
+    will-change: transform;
+}
+.type__bg{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 280px;
+    font-weight: 400;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.products{
+    padding-top: 30px;
+}
+.products__heading{
+    padding-left: 40px;
+}
+.products__heading h2{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 3.7em;
+    font-weight: 600;
+    color: #fff;
+}
+.products__heading p{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 2.4em;
+    font-weight: 600;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    color: #a300c8;
+}
+.slider__title{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 43px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.slider__block{
+    margin-top: 100px;
+}
+.slider__block .btn__purple{
+    margin: 40px auto 0;
+}
+.products__slider{
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    max-width: 75%;
+}
+.products__slider--item{
+    max-width: 200px;
+text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products__slider--item .btn__purple{
+    visibility: hidden;
+    /*transition: all .3s;*/
+}
+.products__slider--item img{
+    max-height: 345px;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+.products__slider .swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+.products__slider .swiper-slide:not(.swiper-slide-active){
+    transform: scale(.3);
+    opacity: .3;
+    transition: all .3s;
+}
+.products__slider .swiper-slide-active .products__slider--item .btn__purple{
+    visibility: visible;
+}
+.products__slider .swiper-slide-prev, .products__slider .swiper-slide-next{
+    transform: scale(.6) !important;
+}
+
+.products__slider .swiper-button-prev svg, .products__slider .swiper-button-next svg{
+    display: flex;
+}
+.products__slider .swiper-button-prev, .products__slider .swiper-button-next{
+    background: transparent;
+    border: none;
+}
+.products__slider .swiper-button-prev:before, .products__slider .swiper-button-next:before{
+    display: none;
+}
+.lover__col:last-child{
+    width: 450px;
+}
+.lover__col:last-child img{
+    width: 100%;
+}
+
+.lover__col--img{
+    width: 216px;
+}
+.lover__col:first-child{
+    width: calc(100% - 500px);
+}
+.lover__title{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.lover__sub{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #a300c8;
+}
+.lover{
+    margin-top: 40px;
+}
+.lover__text{
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #fff;
+}
+.lover__col__top{
+    gap: 30px;
+}
+.lover__product img{
+    width: 160px;
+    height: 250px;
+    object-fit: contain;
+}
+.lover__product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.lover__col--bottom{
+    margin-top: 100px;
+}
+.lover__products{
+    gap: 80px;
+}
+.products--glow p{
+    text-align: right;
+}
+.products--glow .products__heading{
+    padding-right: 40px;
+}
+ .products__glow--top img:first-child{
+     max-width: 400px;
+     width: 100%;
+     object-fit: contain;
+     height: auto;
+ }
+.products__glow--top img:nth-child(2){
+    max-width: 500px;
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+.products__glow--top img:last-child{
+    max-width: 600px;
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    margin-left: auto;
+}
+.gallery__left{
+    position: relative;
+}
+.gallery__left .gallery__item:first-child{
+    position: relative;
+    z-index: 1;
+    max-width: 454px;
+    width: 100%;
+}
+.gallery__left .gallery__item:nth-child(2){
+    position: relative;
+    z-index: 1;
+    max-width: 259px;
+    width: 100%;
+    transform: translateY(-100%) translateX(470px);
+
+}
+.gallery__left .gallery__item:nth-child(3){
+    max-width: 389px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-100%) translateX(190px);
+
+}
+.gallery__left .gallery__item:last-child{
+
+    height: 267px;
+    max-width: 508px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 150px;
+    z-index: 0;
+}
+.gallery__left{
+    width: 100%;
+}
+.gallery__right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.gallery__right .gallery__item:first-child{
+
+    max-width: 248px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 100px;
+
+}
+.gallery__right .gallery__item:last-child{
+
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+}
+.gallery__animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.gallery{
+    margin-top: 100px;
+    position: relative;
+}
+.gallery__animation{
+    display:flex;
+    gap:20px;
+}
+.gallery__animation--item {
+    max-width: 300px;
+    width: auto;
+    position: absolute;
+    max-height: 300px;
+}
+.gallery__animation--item img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    max-height: 300px;
+}
+.gallery__col{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.gallery__col--left .gallery__animation--item:first-child{
+    position: absolute;
+    top: -250px;
+    left: 60px;
+}
+.gallery__col--right .gallery__animation--item:first-child{
+    position: absolute;
+    top: -250px;
+    right: 60px;
+}
+.gallery__col--left .gallery__animation--item:nth-child(2){
+    position: absolute;
+    top: 150px;
+    left: 160px;
+}
+.gallery__col--right .gallery__animation--item:nth-child(2){
+    position: absolute;
+    top: 80px;
+    right: 160px;
+    height: 240px;
+}
+.gallery__col--left .gallery__animation--item:nth-child(3){
+    position: absolute;
+    top: 450px;
+    left: 310px;
+
+}
+.gallery__col--right .gallery__animation--item:nth-child(3){
+    position: absolute;
+    top: 250px;
+    right: 310px;
+}
+.info__content{
+    padding-left: 100px;
+    gap: 48px;
+    padding-right: 40px;
+}
+.info__left{
+    max-width: 485px;
+    width: 100%;
+}
+.info__right{
+    max-width: calc(100% - 510px);
+    width: 100%;
+}
+.info__right h3{
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 2.1em;
+    font-weight: 400;
+    line-height: 1.3em;
+    letter-spacing: .01em;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    color: #edbebe;
+}
+.info__right p{
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 2.1em;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: .01em;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    color: #edbebe;
+    opacity: 0.6858;
+    will-change: opacity;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.subscribe{
+    margin-top: 40px;
+}
+.arrow-down{
+    width: 32px;
+    animation: arrowBounce 2s ease-in-out infinite;
+}
+
+@keyframes arrowBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+}
+.subscribe__top{
+    gap: 10px;
+}
+.subscribe__top h2{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+}
+.logo__right{
+    width: 100%;
+}
+.logo__left{
+    width: 100%;
+}
+.back__logo {
+    gap: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+}
+.subscribe__item{
+    width: 38vw;
+    border-style: solid;
+    border-width: 2.5vw;
+    border-color: #c36;
+    display: flex;
+    position: absolute;
+    left: 60px;
+    top: 120px;
+    transition: all .3s;
+}
+.subscribe__item:hover{
+    border-color: #336;
+}
+.subscribe__item:nth-child(2){
+    width: 28vw;
+    left: auto;
+    right: 120px;
+}
+.subscribe__item:nth-child(3){
+    width: 28vw;
+    left: 180px;
+    bottom: 0;
+    top: auto;
+
+}
+.product-certificates{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 60px;
+
+}
+.product-certificates__list{
+    gap: 40px;
+}
+.product-certificates__item{
+    width: 100%;
+}
+.product-certificates__item img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+
+}
+.product-certificates__item img:hover{
+    transform: scale(1.2);
+    z-index: 2;
+    position: relative;
+}
+.home footer{
+    border-top: 0;
+}
+.footer__socials{
+    justify-content: center;
+    gap: 100px;
+}
+.footer__socials--item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #fff;
+}
+.footer__bottom--home{
+    margin-top: 40px;
+}
+.footer__bottom--home img{
+    max-width: 475px;
+    width: 100%;
+}
+.footer__bottom--home p{
+    text-align: center;
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer__bottom--home a{
+    font-family: "Actay Sexperiments", Sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #0080ff;
+}
+.home{
+    background-image: url('../images/home/image-30fa1731-9066-42c1-824b-ca7bf329a4b7-scaled-e1771370314290.webp');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+}

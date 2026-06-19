@@ -103,9 +103,26 @@ var swiper4 = new Swiper(".certificate__list", {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.btn__more').addEventListener('click', function (){
-        document.querySelector('.product__more--desc').classList.toggle('open');
-    })
+    if(document.querySelector('.btn__more')){
+
+        document.querySelector('.btn__more').addEventListener('click', function (){
+            document.querySelector('.product__more--desc').classList.toggle('open');
+        })
+    }
+    if(document.querySelector('.img-off')){
+
+        document.querySelector('.img-off').addEventListener('click', function (){
+            document.querySelector('.img-on').classList.toggle('hide');
+            document.querySelector('.img-off').classList.toggle('hide');
+        })
+    }
+    if(document.querySelector('.img-on')){
+
+        document.querySelector('.img-on').addEventListener('click', function (){
+            document.querySelector('.img-off').classList.toggle('hide');
+            document.querySelector('.img-on').classList.toggle('hide');
+        })
+    }
     const menu = document.querySelector('.menu');
     const btn = document.querySelector('.btn__menu');
 
@@ -138,5 +155,179 @@ document.addEventListener('DOMContentLoaded', function() {
             autoStart: true,
         }
     });
+    gsap.registerPlugin(ScrollTrigger);
 
+
+    gsap.to(".horny", {
+        y: -150,
+        x: 100,
+        scrollTrigger: {
+            trigger: ".features__animation",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1
+        }
+    });
+
+    gsap.to(".glow", {
+        y: -150,
+        x: -100,
+        scrollTrigger: {
+            trigger: ".features__animation",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1
+        }
+    });
+
+    gsap.fromTo(".features__logo",
+        {
+            x: -300,   // старт слева
+        },
+        {
+            x: 300,    // уезжает вправо
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".features__animation",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+
+
+    gsap.utils.toArray(".about__text").forEach((text, i) => {
+        gsap.fromTo(text,
+            {
+                opacity: .2,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: text,
+                    scrub: true
+                }
+            }
+        );
+
+    });
+    gsap.fromTo(".type__text--animation",
+        {
+            x: "100vw"
+        },
+        {
+            x: "-100vw",
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".type__text",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+    gsap.fromTo(".lover__text",
+        {
+            opacity: .2,
+        },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".lover",
+                scrub: true
+            }
+        });
+    gsap.fromTo(".info__right p",
+        {
+            opacity: .2,
+        },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".info",
+                scrub: true
+            }
+        });
+
+
+
+    // const items = document.querySelectorAll('.gallery__animation--item');
+    //
+    // items.forEach((item, index) => {
+    //
+    //     gsap.to(item, {
+    //         y: index % 2 === 0 ? -150 : 150,
+    //         ease: "none",
+    //         scrollTrigger: {
+    //             trigger: ".gallery__animation",
+    //             start: "top bottom",
+    //             end: "bottom top",
+    //             scrub: true
+    //         }
+    //     });
+    //
+    // });
+
+    gsap.to(".gallery__col--left", {
+        y: -200,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".gallery__animation",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true
+        }
+    });
+
+    gsap.to(".gallery__col--right", {
+        y: 200,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".gallery__animation",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true
+        }
+    });
+});
+
+
+var swiper5 = new Swiper(".products__slider", {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 5,
+    freeMode: true,
+    centeredSlides: true,
+    navigation: {
+        nextEl: ".products__slider .swiper-button-next",
+        prevEl: ".products__slider .swiper-button-prev",
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 4,
+
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 4,
+
+        },
+
+        640: {
+            slidesPerView:3,
+
+        },
+        980:{
+            slidesPerView: 4
+        }
+    }
 });
