@@ -313,12 +313,12 @@ var swiper5 = new Swiper(".products__slider", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 4,
+            slidesPerView: 1,
 
         },
         // when window width is >= 480px
         480: {
-            slidesPerView: 4,
+            slidesPerView: 1,
 
         },
 
@@ -328,6 +328,47 @@ var swiper5 = new Swiper(".products__slider", {
         },
         980:{
             slidesPerView: 4
+        }
+    }
+});
+
+var swiper6 = new Swiper(".type__text--slider", {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".type__text--slider .swiper-button-next",
+        prevEl: ".type__text--slider .swiper-button-prev",
+    }
+});
+var swiper7 = new Swiper(".product-certificates__list", {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 3,
+    freeMode: true,
+    centeredSlides: true,
+    navigation: {
+        nextEl: ".product-certificates__list .swiper-button-next",
+        prevEl: ".product-certificates__list .swiper-button-prev",
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 1,
+
+        },
+
+        640: {
+            slidesPerView:2,
+
+        },
+        980:{
+            slidesPerView: 3
         }
     }
 });
