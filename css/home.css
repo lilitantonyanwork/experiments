@@ -4,11 +4,15 @@ html{
 .banner{
     height: 600px;
     position: relative;
+    overflow: hidden;
 }
 .banner video{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+
+}
+.banner__video{
+    overflow: hidden;
 }
 
 .banner__content{
