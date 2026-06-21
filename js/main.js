@@ -297,6 +297,63 @@ document.addEventListener('DOMContentLoaded', function() {
             scrub: true
         }
     });
+
+
+    // window.addEventListener('resize', () => {
+        if (window.innerWidth < 600) {
+            gsap.to(".horny", {
+                y: -250,
+                x: 100,
+                scrollTrigger: {
+                    trigger: ".features__animation",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1
+                }
+            });
+
+            gsap.to(".glow", {
+                y: -250,
+                x: -100,
+                scrollTrigger: {
+                    trigger: ".features__animation",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1
+                }
+            });
+
+            gsap.set(".features__logo", {
+                x: 300,
+                y: 300
+            });
+
+            gsap.to(".features__logo", {
+                y: -250,
+                x: -120,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".features__animation",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1
+                }
+            });
+
+
+            gsap.to(".gallery-mob__animation", {
+                y: -200,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".gallery-mob",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+
+        }
+    // });
 });
 
 
@@ -313,12 +370,12 @@ var swiper5 = new Swiper(".products__slider", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 1,
+            slidesPerView: 3,
 
         },
         // when window width is >= 480px
         480: {
-            slidesPerView: 1,
+            slidesPerView: 3,
 
         },
 
@@ -371,4 +428,46 @@ var swiper7 = new Swiper(".product-certificates__list", {
             slidesPerView: 3
         }
     }
+});
+var swiper8 = new Swiper(".about-slider", {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    freeMode: true,
+    centeredSlides: true,
+    navigation: {
+        nextEl: ".about-slider .swiper-button-next",
+        prevEl: ".about-slider .swiper-button-prev",
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 1,
+
+        },
+
+        640: {
+            slidesPerView:2,
+
+        },
+        980:{
+            slidesPerView: 3
+        }
+    }
+});
+
+var swiper10 = new Swiper(".lover__products--mob", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+        nextEl: ".lover__products--mob .swiper-button-next",
+        prevEl: ".lover__products--mob .swiper-button-prev",
+    },
 });
