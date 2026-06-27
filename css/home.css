@@ -1713,7 +1713,7 @@ text-align: center;
     }
     .gallery-mob__item:nth-child(3){
         width: 125px;
-        right: 0;
+        right: 20px;
         position: absolute;
         top: 400px;
         z-index: 9;
