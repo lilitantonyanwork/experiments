@@ -526,8 +526,6 @@ var swiper7 = new Swiper(".product-certificates__list", {
     loop: true,
     spaceBetween: 30,
     slidesPerView: 3,
-    freeMode: true,
-    centeredSlides: true,
     navigation: {
         nextEl: ".product-certificates__list .swiper-button-next",
         prevEl: ".product-certificates__list .swiper-button-prev",
