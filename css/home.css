@@ -1698,46 +1698,55 @@ text-align: center;
         width: 100%;
     }
     .gallery-mob__item:first-child{
-        width: 145px;
+        width: 209px;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
-        top: -100px;
+        top: -240px;
     }
     .gallery-mob__item:nth-child(2){
-        width: 160px;
+        width: 237px;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
-        top: 60px;
+        top: 0;
     }
     .gallery-mob__item:nth-child(3){
-        width: 80px;
-        right: 40px;
-        position: absolute;
-        top: 200px;
-    }
-    .gallery-mob__item:nth-child(4){
-        width: 80px;
-        left: 40px;
-        position: absolute;
-        top: 300px;
-    }
-    .gallery-mob__item:nth-child(5){
-        width: 80px;
-        left: 40px;
+        width: 125px;
+        right: 0;
         position: absolute;
         top: 400px;
+        z-index: 9;
+    }
+    .gallery-mob__item:nth-child(4){
+        width: 168px;
+        left: 0;
+        position: absolute;
+        top: 500px;
+    }
+    .gallery-mob__content img{
+        height: 450px;
+        object-fit: cover;
+    }
+    .gallery-mob__item:nth-child(5){
+        width: 120px;
+        left: 0;
+        position: absolute;
+        top: 250px;
     }
     .gallery-mob__item:nth-child(6){
-        width: 100px;
-        right: 40px;
+        width: 172px;
+        right: 0;
         position: absolute;
-        top: 100%;
+        top: 120px;
     }
     .subscribe__top h2{
         text-align: center;
         width: 70%;
+        font-size: 18px;
+    }
+    .subscribe{
+        z-index: 0;
     }
     .product-certificates .swiper-button-prev,
     .product-certificates .swiper-button-next{
