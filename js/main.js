@@ -103,6 +103,27 @@ var swiper4 = new Swiper(".certificate__list", {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    const modal = document.getElementById("modal");
+    const yesBtn = document.getElementById("agl_yes_button");
+
+    // Если уже подтвердил возраст в этой сессии — не показываем
+    if (sessionStorage.getItem("ageConfirmed")) return;
+
+    // Показываем модалку через 2 секунды
+    setTimeout(() => {
+        modal.classList.add("open");
+    }, 1000);
+
+    // Подтверждение возраста
+    yesBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        sessionStorage.setItem("ageConfirmed", "true");
+        modal.classList.remove("open");
+    });
+
+
     if(document.querySelector('.btn__more')){
 
         document.querySelector('.btn__more').addEventListener('click', function (){
