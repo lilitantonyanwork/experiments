@@ -345,13 +345,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             const galleryTween = gsap.to(".gallery-mob__animation", {
-                y: -200,
+                y: -350,
                 ease: "none",
                 scrollTrigger: {
                     trigger: ".gallery-mob",
                     start: "top bottom",
-                    end: "bottom top",
-                    scrub: true,
+                    end: "top top",
+                    scrub:  2,
                 },
             });
 
